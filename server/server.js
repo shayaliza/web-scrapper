@@ -51,6 +51,10 @@ app.post("/scrape", (req, res) => {
   });
 });
 
+app.use("/", (req, res) => {
+  res.send("hello World");
+});
+
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
